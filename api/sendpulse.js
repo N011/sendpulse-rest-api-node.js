@@ -1182,6 +1182,7 @@ function smsDeleteCampaign(callback, campaign_id) {
     sendRequest('sms/campaigns', 'DELETE', data, true, callback);
 }
 
+exports.sendRequest = sendRequest;
 exports.init = init;
 exports.listAddressBooks = listAddressBooks;
 exports.createAddressBook = createAddressBook;
